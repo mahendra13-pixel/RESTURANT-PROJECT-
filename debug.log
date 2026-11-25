@@ -1,0 +1,446 @@
+2026-02-11 21:49:11,652 - ERROR - name 'p' is not defined
+Traceback (most recent call last):
+  File "C:\Users\dk11f\OneDrive\Desktop\django\Res\restaurant\core\views.py", line 17, in index
+    p
+NameError: name 'p' is not defined
+2026-02-11 21:49:11,868 - ERROR - Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\dk11f\OneDrive\Desktop\django\Res\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dk11f\OneDrive\Desktop\django\Res\myenv\Lib\site-packages\django\core\handlers\base.py", line 205, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\dk11f\OneDrive\Desktop\django\Res\myenv\Lib\site-packages\django\core\handlers\base.py", line 333, in check_response
+    raise ValueError(
+ValueError: The view core.views.index didn't return an HttpResponse object. It returned None instead.
+2026-02-11 21:49:11,872 - ERROR - "GET / HTTP/1.1" 500 72218
+2026-02-11 21:50:37,176 - ERROR - name 'p' is not defined
+Traceback (most recent call last):
+  File "C:\Users\dk11f\OneDrive\Desktop\django\Res\restaurant\core\views.py", line 19, in index
+    p
+NameError: name 'p' is not defined
+2026-02-11 21:50:37,228 - ERROR - Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\dk11f\OneDrive\Desktop\django\Res\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dk11f\OneDrive\Desktop\django\Res\myenv\Lib\site-packages\django\core\handlers\base.py", line 205, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\dk11f\OneDrive\Desktop\django\Res\myenv\Lib\site-packages\django\core\handlers\base.py", line 333, in check_response
+    raise ValueError(
+ValueError: The view core.views.index didn't return an HttpResponse object. It returned None instead.
+2026-02-11 21:50:37,231 - ERROR - "GET / HTTP/1.1" 500 72355
+2026-02-11 21:50:38,120 - ERROR - name 'p' is not defined
+Traceback (most recent call last):
+  File "C:\Users\dk11f\OneDrive\Desktop\django\Res\restaurant\core\views.py", line 19, in index
+    p
+NameError: name 'p' is not defined
+2026-02-11 21:50:38,154 - ERROR - Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\dk11f\OneDrive\Desktop\django\Res\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dk11f\OneDrive\Desktop\django\Res\myenv\Lib\site-packages\django\core\handlers\base.py", line 205, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\dk11f\OneDrive\Desktop\django\Res\myenv\Lib\site-packages\django\core\handlers\base.py", line 333, in check_response
+    raise ValueError(
+ValueError: The view core.views.index didn't return an HttpResponse object. It returned None instead.
+2026-02-11 21:50:38,156 - ERROR - "GET / HTTP/1.1" 500 72355
+2026-02-11 21:52:27,594 - ERROR - name 'p' is not defined
+Traceback (most recent call last):
+  File "C:\Users\dk11f\OneDrive\Desktop\django\Res\restaurant\core\views.py", line 19, in index
+    p
+NameError: name 'p' is not defined
+2026-02-11 21:54:05,905 - ERROR - name 'p' is not defined
+Traceback (most recent call last):
+  File "C:\Users\dk11f\OneDrive\Desktop\django\Res\restaurant\core\views.py", line 19, in index
+    p
+NameError: name 'p' is not defined
+2026-02-16 14:46:55,616 - ERROR - Internal Server Error: /social-auth/login/google-oauth2/
+Traceback (most recent call last):
+  File "C:\Users\dk11f\OneDrive\Desktop\django\Res\myenv\Lib\site-packages\django\urls\base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: '<decouple.Config object at 0x000002924549ECF0>'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dk11f\OneDrive\Desktop\django\Res\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dk11f\OneDrive\Desktop\django\Res\myenv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dk11f\OneDrive\Desktop\django\Res\myenv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dk11f\OneDrive\Desktop\django\Res\myenv\Lib\site-packages\social_django\utils.py", line 58, in wrapper
+    return func(request, backend, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dk11f\OneDrive\Desktop\django\Res\myenv\Lib\site-packages\social_django\utils.py", line 32, in wrapper
+    uri = reverse(redirect_uri, args=(backend,))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dk11f\OneDrive\Desktop\django\Res\myenv\Lib\site-packages\django\urls\base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: '<decouple.Config object at 0x000002924549ECF0>' is not a registered namespace
+2026-02-16 14:46:55,621 - ERROR - "GET /social-auth/login/google-oauth2/ HTTP/1.1" 500 94779
+2026-11-22 16:42:00,285 - ERROR - Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 16, in cached_import
+    return getattr(module, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'core.current' has no attribute 'current_time'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "I:\5. RESUTURANT PROJECT\Res\restaurant\core\views.py", line 41, in index
+    return render(request,'core/index.html',context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 172, in render
+    with context.bind_template(self):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\context.py", line 260, in bind_template
+    processors = template.engine.template_context_processors + self._processors
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\engine.py", line 118, in template_context_processors
+    return tuple(import_string(path) for path in context_processors)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\engine.py", line 118, in <genexpr>
+    return tuple(import_string(path) for path in context_processors)
+                 ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 32, in import_string
+    raise ImportError(
+ImportError: Module "core.current" does not define a "current_time" attribute/class
+2026-11-22 16:42:00,326 - ERROR - "GET / HTTP/1.1" 500 123884
+2026-11-22 16:42:12,519 - ERROR - You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-11-22 16:42:12,524 - ERROR - You're accessing the development server over HTTPS, but it only supports HTTP.
+2026-11-22 16:42:24,349 - ERROR - Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 16, in cached_import
+    return getattr(module, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'core.current' has no attribute 'current_time'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "I:\5. RESUTURANT PROJECT\Res\restaurant\core\views.py", line 41, in index
+    return render(request,'core/index.html',context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 172, in render
+    with context.bind_template(self):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\context.py", line 260, in bind_template
+    processors = template.engine.template_context_processors + self._processors
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\engine.py", line 118, in template_context_processors
+    return tuple(import_string(path) for path in context_processors)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\engine.py", line 118, in <genexpr>
+    return tuple(import_string(path) for path in context_processors)
+                 ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 32, in import_string
+    raise ImportError(
+ImportError: Module "core.current" does not define a "current_time" attribute/class
+2026-11-22 16:42:24,352 - ERROR - "GET / HTTP/1.1" 500 124391
+2026-11-22 16:42:25,418 - ERROR - Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 16, in cached_import
+    return getattr(module, class_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'core.current' has no attribute 'current_time'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "I:\5. RESUTURANT PROJECT\Res\restaurant\core\views.py", line 41, in index
+    return render(request,'core/index.html',context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 172, in render
+    with context.bind_template(self):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\context.py", line 260, in bind_template
+    processors = template.engine.template_context_processors + self._processors
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\engine.py", line 118, in template_context_processors
+    return tuple(import_string(path) for path in context_processors)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\engine.py", line 118, in <genexpr>
+    return tuple(import_string(path) for path in context_processors)
+                 ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\module_loading.py", line 32, in import_string
+    raise ImportError(
+ImportError: Module "core.current" does not define a "current_time" attribute/class
+2026-11-22 16:42:25,427 - ERROR - "GET / HTTP/1.1" 500 124247
+2026-11-22 16:43:46,930 - ERROR - Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: core_category
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "I:\5. RESUTURANT PROJECT\Res\restaurant\core\views.py", line 41, in index
+    return render(request,'core/index.html',context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 174, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 166, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 1091, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 1052, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader_tags.py", line 160, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 166, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 1091, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 1052, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader_tags.py", line 66, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 1091, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 1052, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\defaulttags.py", line 202, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 372, in __len__
+    self._fetch_all()
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 2000, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 95, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\compiler.py", line 1624, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: core_category
+2026-11-22 16:43:46,943 - ERROR - "GET / HTTP/1.1" 500 206305
+2026-11-22 16:44:58,434 - ERROR - Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: core_category
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "I:\5. RESUTURANT PROJECT\Res\restaurant\core\views.py", line 41, in index
+    return render(request,'core/index.html',context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 174, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 166, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 1091, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 1052, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader_tags.py", line 160, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 166, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 1091, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 1052, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\loader_tags.py", line 66, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 1091, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\base.py", line 1052, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\defaulttags.py", line 202, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 372, in __len__
+    self._fetch_all()
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 2000, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 95, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\compiler.py", line 1624, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bikram ranadev\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: core_category
+2026-11-22 16:44:58,444 - ERROR - "GET / HTTP/1.1" 500 206168

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- JavaScript -->
+<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
+
+<!-- CSS -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'css/register.css' %}">
+
+
+<style>
+  .cross{
+    position: absolute;
+    top: 0;
+    right: 8px;
+  }
+  .cross:hover{
+    color: blue;
+   scale: 1.2;
+  }
+ #toogglepassword{
+  position: absolute;
+  right: 4%;
+  top: 40%;
+
+}
+</style>
+
+</head>
+<body>
+
+
+    <!-- From Uiverse.io by marc_remus --> 
+     
+<form class="form " method="post" action="{% url 'log_in' %}">
+  {% csrf_token %}
+  <a href="{% url 'index' %}"><h2 class="cross"><i class="fa-solid fa-x"></i></h2></a>
+  <p class="title">Login</p>
+  <p class="message">Signup now and get full access to our app.</p>
+
+  <label>
+      <input required="" name="username" placeholder="" type="text" class="input" />
+      <span>UserName</span>
+      <input type="hidden" name='next' value={{next}}>
+    </label>
+  
+ <div>
+  <label>
+    <input required="" name="password" placeholder="" type="password" id="password" class="input" />
+    <span>Password</span>
+    <i class="fa-regular fa-eye" id="toogglepassword" onclick="tooglepassword()"></i>
+  </label>
+  </div>
+  <div>
+    <input type="checkbox" name="remember_me">
+    <label for="">Remember Me</label>
+  </div>
+  <a href="{% url 'password_reset' %}">Forget Password?</a>
+  <button class="submit">Sign IN</button>
+  <div class="social-login">
+  <span>Login with Social Accounts</span>
+
+  <div class="social-icons">
+    <a href="{% url 'social:begin' 'google-oauth2' %}">
+      <i class="fa-brands fa-google"></i>
+    </a>
+
+    <a href="{% url 'social:begin' 'github' %}">
+      <i class="fa-brands fa-github"></i>
+    </a>
+  </div>
+</div>
+
+ 
+  <p class="signin">Don't have an acount ? <a href="{% url 'register' %}">Sign UP</a></p>
+</form>
+  {% if messages %}
+    {% for message in messages %}
+    {% if message.tags == 'success' %}
+       <script>
+      alertify.set('notifier','position', 'bottom-right');
+      alertify.success('{{message}}');
+    </script>
+    {% else %}
+    <script>
+      alertify.set('notifier','position', 'bottom-right');
+      alertify.error('{{message}}');
+    </script>
+       {% endif %}
+    {% endfor %}
+  {% endif %}
+<script>
+ function tooglepassword(){
+  const inputpassword=document.getElementById('password')
+  const icon=document.getElementById('toogglepassword')
+   if(inputpassword.type==='password'){
+     inputpassword.type='text'
+     icon.classList.remove('fa-eye')
+     icon.classList.add('fa-eye-slash')
+   }
+   else{
+     inputpassword.type='password';
+     icon.classList.remove('fa-eye-slash');
+     icon.classList.add('fa-eye');
+   }
+ }
+</script>
+</body>
+</html>

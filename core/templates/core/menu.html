@@ -1,0 +1,60 @@
+
+{% extends "base.html" %}
+{% load static %}
+{% block css %}
+  <link rel="stylesheet" href="{% static 'css/menu.css' %}">
+{% endblock css %}
+{% block content %}
+
+
+
+    <nav class="top-nav">
+        <a href="#food-menu">conheça nosso cardápio!</a>
+        <a href="#food-menu">
+            <img src="https://i.postimg.cc/fTzFMXKj/arrow-down.png" alt="Cardápio">
+        </a>
+    </nav>
+    <section id="home" class="home"></section>
+    <div class="container" id="food-menu">
+        <h1 class="h1">Food Menu</h1>
+        {% for i in category  %}
+          
+     
+        <section class="content-menu">
+            <aside class="aside-float">
+                <nav class="nav-side">
+                    <a href="#plates">{{i.title}}<img src="https://i.postimg.cc/65MPq3bs/cutlery.png" alt="Pratos"></a>
+
+                </nav>
+            </aside>
+            <section class="content-side">
+                <section class="items" id="items">
+                    <article class="plates" id="plates">
+                        <div  style="background-image: url('{{i.image.url}}');"    class="header1">
+                            <h1>{{i.title}}</h1>
+                      
+                                           </div>
+                        <ul class="menu-items">
+                            {% for j in i.items.all %}
+                              
+                            
+                            <li class="item">
+                                <span class="food">{{j.name}}</span>
+                                <span class="price">R$ {{j.price}}</span>
+                            </li>
+                           {% endfor %}
+                           
+                        </ul>
+                    </article>
+                </section>
+               
+                
+            </section>
+        </section>
+           {% endfor %}
+    </div>
+    
+
+{% endblock content %}
+  
+  

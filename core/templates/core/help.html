@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+
+{% block CSS %}
+<style>
+    .help-container {
+        max-width: 1000px;
+        margin: 40px auto;
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        line-height: 1.7;
+    }
+
+    .help-container h1,
+    .help-container h2 {
+        color: #111827;
+        margin-top: 25px;
+    }
+
+    .help-container p {
+        margin: 12px 0;
+        color: #333;
+    }
+
+    .help-container ul {
+        margin-left: 20px;
+    }
+
+    .help-container li {
+        margin-bottom: 8px;
+    }
+
+    .help-box {
+        background: #f9fafb;
+        padding: 15px 20px;
+        border-left: 4px solid #dc2626;
+        margin: 20px 0;
+        border-radius: 6px;
+    }
+</style>
+{% endblock CSS %}
+
+{% block content %}
+<div class="help-container">
+
+    <h1>Help & Support</h1>
+    <p>
+        Need assistance? We’re here to help you with orders, services,
+        and general inquiries about MOMOS Restaurant.
+    </p>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="help-box">
+        <strong>🍽 How can I place an order?</strong>
+        <p>
+            You can place an order directly through WhatsApp by clicking the
+            “Order Now” button or by calling us.
+        </p>
+    </div>
+
+    <div class="help-box">
+        <strong>⏰ What are your opening hours?</strong>
+        <p>
+            We are open daily from <b>10:00 AM to 9:00 PM</b>.
+        </p>
+    </div>
+
+    <div class="help-box">
+        <strong>🚚 Do you offer home delivery?</strong>
+        <p>
+            Yes, we offer home delivery within nearby areas.
+            Delivery charges may apply.
+        </p>
+    </div>
+
+    <div class="help-box">
+        <strong>🎉 Do you provide catering services?</strong>
+        <p>
+            Yes! We provide catering for parties, events, and gatherings.
+            Please contact us in advance.
+        </p>
+    </div>
+
+    <h2>Need More Help?</h2>
+    <p>
+        If your question isn’t listed above, feel free to contact us:
+    </p>
+
+    <ul>
+        <li>📞 Phone: <a href="tel:9863718846">+977 9863718846</a></li>
+        <li>📧 Email: <a href="mailto:diwashkhanal2005@gmail.com">diwashkhanal2005@gmail.com</a></li>
+        <li>📍 Location: Vyas-8, Tanahun, Nepal</li>
+    </ul>
+
+</div>
+{% endblock content %}
